@@ -1,0 +1,463 @@
+fileFormatVersion: 2
+guid: 7c731f32d9e7bb64ab01fc8292f7ca32
+ModelImporter:
+  serializedVersion: 23
+  fileIDToRecycleName:
+    100000: //RootNode
+    400000: //RootNode
+    2100000: reaoldwo
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: rearow61
+    7400000: rearow61|Camera01.Target|Take 001|BaseLayer
+    7400002: rearow61|Camera01|Take 001|BaseLayer
+    7400004: rearow61|Dummy01|Take 001|BaseLayer
+    7400006: rearow61|reaador2|Take 001|BaseLayer
+    7400008: rearow61|reaador3|Take 001|BaseLayer
+    7400010: rearow61|reaador4|Take 001|BaseLayer
+    7400012: rearow61|reaador|Take 001|BaseLayer
+    7400014: rearow61|reaancho|Take 001|BaseLayer
+    7400016: rearow61|reabasan|Take 001|BaseLayer
+    7400018: rearow61|reabasbo|Take 001|BaseLayer
+    7400020: rearow61|reabasc1|Take 001|BaseLayer
+    7400022: rearow61|reabasc2|Take 001|BaseLayer
+    7400024: rearow61|reabasc3|Take 001|BaseLayer
+    7400026: rearow61|reabasc4|Take 001|BaseLayer
+    7400028: rearow61|reabasc5|Take 001|BaseLayer
+    7400030: rearow61|reabase2|Take 001|BaseLayer
+    7400032: rearow61|REAbase|Take 001|BaseLayer
+    7400034: rearow61|reabasm1|Take 001|BaseLayer
+    7400036: rearow61|reabasm2|Take 001|BaseLayer
+    7400038: rearow61|reabboa1|Take 001|BaseLayer
+    7400040: rearow61|reabboa2|Take 001|BaseLayer
+    7400042: rearow61|reabboa3|Take 001|BaseLayer
+    7400044: rearow61|reabboa4|Take 001|BaseLayer
+    7400046: rearow61|reabboa5|Take 001|BaseLayer
+    7400048: rearow61|reaboat1|Take 001|BaseLayer
+    7400050: rearow61|reaboat2.001|Take 001|BaseLayer
+    7400052: rearow61|reaboat2|Take 001|BaseLayer
+    7400054: rearow61|reaboat3|Take 001|BaseLayer
+    7400056: rearow61|reaboat4|Take 001|BaseLayer
+    7400058: rearow61|reaboat5|Take 001|BaseLayer
+    7400060: rearow61|reaboat|Take 001|BaseLayer
+    7400062: rearow61|reacann2|Take 001|BaseLayer
+    7400064: rearow61|reacann3|Take 001|BaseLayer
+    7400066: rearow61|reacann4|Take 001|BaseLayer
+    7400068: rearow61|reacann5|Take 001|BaseLayer
+    7400070: rearow61|reacanno.001|Take 001|BaseLayer
+    7400072: rearow61|reacanno|Take 001|BaseLayer
+    7400074: rearow61|reacas01|Take 001|BaseLayer
+    7400076: rearow61|reacas02|Take 001|BaseLayer
+    7400078: rearow61|REAcasse|Take 001|BaseLayer
+    7400080: rearow61|REAchain|Take 001|BaseLayer
+    7400082: rearow61|reacolum|Take 001|BaseLayer
+    7400084: rearow61|reacord1|Take 001|BaseLayer
+    7400086: rearow61|reacord2|Take 001|BaseLayer
+    7400088: rearow61|reacord3.001|Take 001|BaseLayer
+    7400090: rearow61|reacord3|Take 001|BaseLayer
+    7400092: rearow61|reacord4|Take 001|BaseLayer
+    7400094: rearow61|reacord5|Take 001|BaseLayer
+    7400096: rearow61|reacord6|Take 001|BaseLayer
+    7400098: rearow61|reacord7|Take 001|BaseLayer
+    7400100: rearow61|reacordA|Take 001|BaseLayer
+    7400102: rearow61|reacord|Take 001|BaseLayer
+    7400104: rearow61|reacup01|Take 001|BaseLayer
+    7400106: rearow61|reacup02|Take 001|BaseLayer
+    7400108: rearow61|reacup03|Take 001|BaseLayer
+    7400110: rearow61|reacup04|Take 001|BaseLayer
+    7400112: rearow61|reacup05|Take 001|BaseLayer
+    7400114: rearow61|reacup06|Take 001|BaseLayer
+    7400116: rearow61|reacup07|Take 001|BaseLayer
+    7400118: rearow61|reacup08|Take 001|BaseLayer
+    7400120: rearow61|reacup09|Take 001|BaseLayer
+    7400122: rearow61|reacup10|Take 001|BaseLayer
+    7400124: rearow61|reacup11|Take 001|BaseLayer
+    7400126: rearow61|reacup12|Take 001|BaseLayer
+    7400128: rearow61|reacup13|Take 001|BaseLayer
+    7400130: rearow61|reacup14|Take 001|BaseLayer
+    7400132: rearow61|reacup15|Take 001|BaseLayer
+    7400134: rearow61|reacup16|Take 001|BaseLayer
+    7400136: rearow61|reacup17|Take 001|BaseLayer
+    7400138: rearow61|reacup18|Take 001|BaseLayer
+    7400140: rearow61|reacup19|Take 001|BaseLayer
+    7400142: rearow61|reacup20|Take 001|BaseLayer
+    7400144: rearow61|reacup21|Take 001|BaseLayer
+    7400146: rearow61|reacup22|Take 001|BaseLayer
+    7400148: rearow61|reacup23|Take 001|BaseLayer
+    7400150: rearow61|reacup24|Take 001|BaseLayer
+    7400152: rearow61|reacup25|Take 001|BaseLayer
+    7400154: rearow61|reacup26|Take 001|BaseLayer
+    7400156: rearow61|reacup27|Take 001|BaseLayer
+    7400158: rearow61|reacup28|Take 001|BaseLayer
+    7400160: rearow61|reacup29|Take 001|BaseLayer
+    7400162: rearow61|reacup30|Take 001|BaseLayer
+    7400164: rearow61|reaendA|Take 001|BaseLayer
+    7400166: rearow61|reaendB|Take 001|BaseLayer
+    7400168: rearow61|reafence|Take 001|BaseLayer
+    7400170: rearow61|REAfire|Take 001|BaseLayer
+    7400172: rearow61|reafla01|Take 001|BaseLayer
+    7400174: rearow61|reafla02|Take 001|BaseLayer
+    7400176: rearow61|reafla03|Take 001|BaseLayer
+    7400178: rearow61|reafla04|Take 001|BaseLayer
+    7400180: rearow61|reafla05|Take 001|BaseLayer
+    7400182: rearow61|reafla06|Take 001|BaseLayer
+    7400184: rearow61|reafla07|Take 001|BaseLayer
+    7400186: rearow61|reafla08|Take 001|BaseLayer
+    7400188: rearow61|reafla09|Take 001|BaseLayer
+    7400190: rearow61|reafla10|Take 001|BaseLayer
+    7400192: rearow61|reafla11|Take 001|BaseLayer
+    7400194: rearow61|reafla12|Take 001|BaseLayer
+    7400196: rearow61|reafla13|Take 001|BaseLayer
+    7400198: rearow61|reafla14|Take 001|BaseLayer
+    7400200: rearow61|reafla15|Take 001|BaseLayer
+    7400202: rearow61|reafla16|Take 001|BaseLayer
+    7400204: rearow61|reafla17|Take 001|BaseLayer
+    7400206: rearow61|reafla18|Take 001|BaseLayer
+    7400208: rearow61|reafla19|Take 001|BaseLayer
+    7400210: rearow61|reafla20|Take 001|BaseLayer
+    7400212: rearow61|reafla21|Take 001|BaseLayer
+    7400214: rearow61|reafla22|Take 001|BaseLayer
+    7400216: rearow61|reafla23|Take 001|BaseLayer
+    7400218: rearow61|reafla24|Take 001|BaseLayer
+    7400220: rearow61|reafla25|Take 001|BaseLayer
+    7400222: rearow61|reafla26|Take 001|BaseLayer
+    7400224: rearow61|reafla27|Take 001|BaseLayer
+    7400226: rearow61|reafla28|Take 001|BaseLayer
+    7400228: rearow61|reafla29|Take 001|BaseLayer
+    7400230: rearow61|reafla30|Take 001|BaseLayer
+    7400232: rearow61|reafla31|Take 001|BaseLayer
+    7400234: rearow61|reafla32|Take 001|BaseLayer
+    7400236: rearow61|reafla33|Take 001|BaseLayer
+    7400238: rearow61|reafla34|Take 001|BaseLayer
+    7400240: rearow61|reafla35|Take 001|BaseLayer
+    7400242: rearow61|reafla36|Take 001|BaseLayer
+    7400244: rearow61|reafla37|Take 001|BaseLayer
+    7400246: rearow61|reafla38|Take 001|BaseLayer
+    7400248: rearow61|reafla39|Take 001|BaseLayer
+    7400250: rearow61|reafla40|Take 001|BaseLayer
+    7400252: rearow61|reafla41|Take 001|BaseLayer
+    7400254: rearow61|reafla42|Take 001|BaseLayer
+    7400256: rearow61|reaflags|Take 001|BaseLayer
+    7400258: rearow61|reaflowe|Take 001|BaseLayer
+    7400260: rearow61|reagate1|Take 001|BaseLayer
+    7400262: rearow61|reagate2|Take 001|BaseLayer
+    7400264: rearow61|reagate3|Take 001|BaseLayer
+    7400266: rearow61|reagate4|Take 001|BaseLayer
+    7400268: rearow61|reagate5|Take 001|BaseLayer
+    7400270: rearow61|reagate6|Take 001|BaseLayer
+    7400272: rearow61|reagate7|Take 001|BaseLayer
+    7400274: rearow61|reagold1|Take 001|BaseLayer
+    7400276: rearow61|reagold2|Take 001|BaseLayer
+    7400278: rearow61|reagold3|Take 001|BaseLayer
+    7400280: rearow61|reagold4|Take 001|BaseLayer
+    7400282: rearow61|reagold5|Take 001|BaseLayer
+    7400284: rearow61|reagold6.001|Take 001|BaseLayer
+    7400286: rearow61|reagold6|Take 001|BaseLayer
+    7400288: rearow61|reagold7|Take 001|BaseLayer
+    7400290: rearow61|reagold8|Take 001|BaseLayer
+    7400292: rearow61|reagold9|Take 001|BaseLayer
+    7400294: rearow61|reagun01|Take 001|BaseLayer
+    7400296: rearow61|reagun02|Take 001|BaseLayer
+    7400298: rearow61|reagun03|Take 001|BaseLayer
+    7400300: rearow61|reagun04|Take 001|BaseLayer
+    7400302: rearow61|reagun05|Take 001|BaseLayer
+    7400304: rearow61|reagun06|Take 001|BaseLayer
+    7400306: rearow61|reagun07|Take 001|BaseLayer
+    7400308: rearow61|reagun08|Take 001|BaseLayer
+    7400310: rearow61|reagun09|Take 001|BaseLayer
+    7400312: rearow61|reagun10|Take 001|BaseLayer
+    7400314: rearow61|reagun11|Take 001|BaseLayer
+    7400316: rearow61|reagun12|Take 001|BaseLayer
+    7400318: rearow61|reagun13|Take 001|BaseLayer
+    7400320: rearow61|reagun14|Take 001|BaseLayer
+    7400322: rearow61|reagun15|Take 001|BaseLayer
+    7400324: rearow61|reagun16|Take 001|BaseLayer
+    7400326: rearow61|reagun17|Take 001|BaseLayer
+    7400328: rearow61|reagun18|Take 001|BaseLayer
+    7400330: rearow61|reagun19|Take 001|BaseLayer
+    7400332: rearow61|reagun20|Take 001|BaseLayer
+    7400334: rearow61|reagun21|Take 001|BaseLayer
+    7400336: rearow61|reagun22|Take 001|BaseLayer
+    7400338: rearow61|reagun23|Take 001|BaseLayer
+    7400340: rearow61|reagun24|Take 001|BaseLayer
+    7400342: rearow61|reagun25|Take 001|BaseLayer
+    7400344: rearow61|reagun26|Take 001|BaseLayer
+    7400346: rearow61|reagun27|Take 001|BaseLayer
+    7400348: rearow61|reagun28|Take 001|BaseLayer
+    7400350: rearow61|reagun29|Take 001|BaseLayer
+    7400352: rearow61|reagun30|Take 001|BaseLayer
+    7400354: rearow61|reaguns|Take 001|BaseLayer
+    7400356: rearow61|REAhandl|Take 001|BaseLayer
+    7400358: rearow61|reahooB1|Take 001|BaseLayer
+    7400360: rearow61|reahooB2|Take 001|BaseLayer
+    7400362: rearow61|reahooB3|Take 001|BaseLayer
+    7400364: rearow61|reahook1|Take 001|BaseLayer
+    7400366: rearow61|reahook2|Take 001|BaseLayer
+    7400368: rearow61|reahook3|Take 001|BaseLayer
+    7400370: rearow61|reahook4|Take 001|BaseLayer
+    7400372: rearow61|reahook5|Take 001|BaseLayer
+    7400374: rearow61|reahook6|Take 001|BaseLayer
+    7400376: rearow61|reahook7|Take 001|BaseLayer
+    7400378: rearow61|reahook8|Take 001|BaseLayer
+    7400380: rearow61|reahorse|Take 001|BaseLayer
+    7400382: rearow61|reairon1|Take 001|BaseLayer
+    7400384: rearow61|reairon2|Take 001|BaseLayer
+    7400386: rearow61|reairon3|Take 001|BaseLayer
+    7400388: rearow61|reairon4|Take 001|BaseLayer
+    7400390: rearow61|reakitc|Take 001|BaseLayer
+    7400392: rearow61|realev01|Take 001|BaseLayer
+    7400394: rearow61|realev02|Take 001|BaseLayer
+    7400396: rearow61|realev03|Take 001|BaseLayer
+    7400398: rearow61|realev04|Take 001|BaseLayer
+    7400400: rearow61|realev05|Take 001|BaseLayer
+    7400402: rearow61|realev06|Take 001|BaseLayer
+    7400404: rearow61|realev07|Take 001|BaseLayer
+    7400406: rearow61|realev08|Take 001|BaseLayer
+    7400408: rearow61|realev09|Take 001|BaseLayer
+    7400410: rearow61|realeve2|Take 001|BaseLayer
+    7400412: rearow61|REALE|Take 001|BaseLayer
+    7400414: rearow61|reamast1|Take 001|BaseLayer
+    7400416: rearow61|reamast2|Take 001|BaseLayer
+    7400418: rearow61|reamast4|Take 001|BaseLayer
+    7400420: rearow61|reamast6|Take 001|BaseLayer
+    7400422: rearow61|reamast7|Take 001|BaseLayer
+    7400424: rearow61|reamast8|Take 001|BaseLayer
+    7400426: rearow61|reamastp|Take 001|BaseLayer
+    7400428: rearow61|reamasts|Take 001|BaseLayer
+    7400430: rearow61|reapole1|Take 001|BaseLayer
+    7400432: rearow61|reapole2|Take 001|BaseLayer
+    7400434: rearow61|reapole|Take 001|BaseLayer
+    7400436: rearow61|reapost3|Take 001|BaseLayer
+    7400438: rearow61|reapost4|Take 001|BaseLayer
+    7400440: rearow61|reaposts|Take 001|BaseLayer
+    7400442: rearow61|reapost|Take 001|BaseLayer
+    7400444: rearow61|rearail2|Take 001|BaseLayer
+    7400446: rearow61|rearail|Take 001|BaseLayer
+    7400448: rearow61|rearow01|Take 001|BaseLayer
+    7400450: rearow61|rearow02|Take 001|BaseLayer
+    7400452: rearow61|rearow03|Take 001|BaseLayer
+    7400454: rearow61|rearow04|Take 001|BaseLayer
+    7400456: rearow61|rearow05|Take 001|BaseLayer
+    7400458: rearow61|rearow06|Take 001|BaseLayer
+    7400460: rearow61|rearow07|Take 001|BaseLayer
+    7400462: rearow61|rearow08|Take 001|BaseLayer
+    7400464: rearow61|rearow09|Take 001|BaseLayer
+    7400466: rearow61|rearow10|Take 001|BaseLayer
+    7400468: rearow61|rearow11|Take 001|BaseLayer
+    7400470: rearow61|rearow12|Take 001|BaseLayer
+    7400472: rearow61|rearow13|Take 001|BaseLayer
+    7400474: rearow61|rearow14|Take 001|BaseLayer
+    7400476: rearow61|rearow15|Take 001|BaseLayer
+    7400478: rearow61|rearow16|Take 001|BaseLayer
+    7400480: rearow61|rearow17|Take 001|BaseLayer
+    7400482: rearow61|rearow18|Take 001|BaseLayer
+    7400484: rearow61|rearow19|Take 001|BaseLayer
+    7400486: rearow61|rearow1|Take 001|BaseLayer
+    7400488: rearow61|rearow20|Take 001|BaseLayer
+    7400490: rearow61|rearow21|Take 001|BaseLayer
+    7400492: rearow61|rearow22|Take 001|BaseLayer
+    7400494: rearow61|rearow23|Take 001|BaseLayer
+    7400496: rearow61|rearow24|Take 001|BaseLayer
+    7400498: rearow61|rearow25|Take 001|BaseLayer
+    7400500: rearow61|rearow26|Take 001|BaseLayer
+    7400502: rearow61|rearow27|Take 001|BaseLayer
+    7400504: rearow61|rearow28|Take 001|BaseLayer
+    7400506: rearow61|rearow29|Take 001|BaseLayer
+    7400508: rearow61|rearow2|Take 001|BaseLayer
+    7400510: rearow61|rearow30|Take 001|BaseLayer
+    7400512: rearow61|rearow31|Take 001|BaseLayer
+    7400514: rearow61|rearow32|Take 001|BaseLayer
+    7400516: rearow61|rearow33|Take 001|BaseLayer
+    7400518: rearow61|rearow34|Take 001|BaseLayer
+    7400520: rearow61|rearow35|Take 001|BaseLayer
+    7400522: rearow61|rearow36|Take 001|BaseLayer
+    7400524: rearow61|rearow37|Take 001|BaseLayer
+    7400526: rearow61|rearow38|Take 001|BaseLayer
+    7400528: rearow61|rearow39|Take 001|BaseLayer
+    7400530: rearow61|rearow40|Take 001|BaseLayer
+    7400532: rearow61|rearow41|Take 001|BaseLayer
+    7400534: rearow61|rearow42|Take 001|BaseLayer
+    7400536: rearow61|rearow43|Take 001|BaseLayer
+    7400538: rearow61|rearow44|Take 001|BaseLayer
+    7400540: rearow61|rearow45|Take 001|BaseLayer
+    7400542: rearow61|rearow46|Take 001|BaseLayer
+    7400544: rearow61|rearow47|Take 001|BaseLayer
+    7400546: rearow61|rearow48|Take 001|BaseLayer
+    7400548: rearow61|rearow49|Take 001|BaseLayer
+    7400550: rearow61|rearow50|Take 001|BaseLayer
+    7400552: rearow61|rearow51|Take 001|BaseLayer
+    7400554: rearow61|rearow52|Take 001|BaseLayer
+    7400556: rearow61|rearow53|Take 001|BaseLayer
+    7400558: rearow61|rearow54|Take 001|BaseLayer
+    7400560: rearow61|rearow55|Take 001|BaseLayer
+    7400562: rearow61|rearow56|Take 001|BaseLayer
+    7400564: rearow61|rearow57|Take 001|BaseLayer
+    7400566: rearow61|rearow58|Take 001|BaseLayer
+    7400568: rearow61|rearow59|Take 001|BaseLayer
+    7400570: rearow61|rearow60|Take 001|BaseLayer
+    7400572: rearow61|rearow61|Take 001|BaseLayer
+    7400574: rearow61|rearudde|Take 001|BaseLayer
+    7400576: rearow61|reaseat1|Take 001|BaseLayer
+    7400578: rearow61|reaseat2|Take 001|BaseLayer
+    7400580: rearow61|reaseat3|Take 001|BaseLayer
+    7400582: rearow61|reasta04|Take 001|BaseLayer
+    7400584: rearow61|reasta3|Take 001|BaseLayer
+    7400586: rearow61|reastai1|Take 001|BaseLayer
+    7400588: rearow61|reastai2|Take 001|BaseLayer
+    7400590: rearow61|reastat1|Take 001|BaseLayer
+    7400592: rearow61|reastat2|Take 001|BaseLayer
+    7400594: rearow61|reatabl1|Take 001|BaseLayer
+    7400596: rearow61|reatabl2|Take 001|BaseLayer
+    7400598: rearow61|reatabl3|Take 001|BaseLayer
+    7400600: rearow61|reatabl4|Take 001|BaseLayer
+    7400602: rearow61|reatabl5|Take 001|BaseLayer
+    7400604: rearow61|reatabl6|Take 001|BaseLayer
+    7400606: rearow61|reatabl7|Take 001|BaseLayer
+    7400608: rearow61|reatend1|Take 001|BaseLayer
+    7400610: rearow61|reatend2|Take 001|BaseLayer
+    7400612: rearow61|reatend3|Take 001|BaseLayer
+    7400614: rearow61|reatrapr|Take 001|BaseLayer
+    7400616: rearow61|reatrase|Take 001|BaseLayer
+    7400618: rearow61|reatrav1|Take 001|BaseLayer
+    7400620: rearow61|reatrav2|Take 001|BaseLayer
+    7400622: rearow61|reatrav3|Take 001|BaseLayer
+    7400624: rearow61|reatrav4|Take 001|BaseLayer
+    7400626: rearow61|reatri01|Take 001|BaseLayer
+    7400628: rearow61|reatri02|Take 001|BaseLayer
+    7400630: rearow61|reatri03|Take 001|BaseLayer
+    7400632: rearow61|reatri04|Take 001|BaseLayer
+    7400634: rearow61|reatri05|Take 001|BaseLayer
+    7400636: rearow61|reatri06|Take 001|BaseLayer
+    7400638: rearow61|reatri07|Take 001|BaseLayer
+    7400640: rearow61|reatri08|Take 001|BaseLayer
+    7400642: rearow61|reatri09|Take 001|BaseLayer
+    7400644: rearow61|reatri10|Take 001|BaseLayer
+    7400646: rearow61|reatri11|Take 001|BaseLayer
+    7400648: rearow61|reatri12|Take 001|BaseLayer
+    7400650: rearow61|reatri13|Take 001|BaseLayer
+    7400652: rearow61|reatri14|Take 001|BaseLayer
+    7400654: rearow61|reatri15|Take 001|BaseLayer
+    7400656: rearow61|reatri16|Take 001|BaseLayer
+    7400658: rearow61|reatri17|Take 001|BaseLayer
+    7400660: rearow61|reatri18|Take 001|BaseLayer
+    7400662: rearow61|reatri19|Take 001|BaseLayer
+    7400664: rearow61|reatri20|Take 001|BaseLayer
+    7400666: rearow61|reatri21|Take 001|BaseLayer
+    7400668: rearow61|reatri22|Take 001|BaseLayer
+    7400670: rearow61|reatri23|Take 001|BaseLayer
+    7400672: rearow61|reatri24|Take 001|BaseLayer
+    7400674: rearow61|reatri25|Take 001|BaseLayer
+    7400676: rearow61|reatri26|Take 001|BaseLayer
+    7400678: rearow61|reatri27|Take 001|BaseLayer
+    7400680: rearow61|reatri28|Take 001|BaseLayer
+    7400682: rearow61|reatri29|Take 001|BaseLayer
+    7400684: rearow61|reatri30|Take 001|BaseLayer
+    7400686: rearow61|reawall1|Take 001|BaseLayer
+    7400688: rearow61|reawall2|Take 001|BaseLayer
+    7400690: rearow61|reawall3|Take 001|BaseLayer
+    7400692: rearow61|reawall4|Take 001|BaseLayer
+    7400694: rearow61|reawall5|Take 001|BaseLayer
+    7400696: rearow61|reawall6|Take 001|BaseLayer
+    7400698: rearow61|reawall7|Take 001|BaseLayer
+    7400700: rearow61|reawall8|Take 001|BaseLayer
+    7400702: rearow61|reawood2|Take 001|BaseLayer
+    7400704: rearow61|reawood3|Take 001|BaseLayer
+    7400706: rearow61|reawood4|Take 001|BaseLayer
+    7400708: rearow61|reawood5|Take 001|BaseLayer
+    7400710: rearow61|reawood6|Take 001|BaseLayer
+    7400712: rearow61|reawoods|Take 001|BaseLayer
+    7400714: rearow61|reawoodt|Take 001|BaseLayer
+    7400716: rearow61|Spot01.Target|Take 001|BaseLayer
+    7400718: rearow61|Spot01|Take 001|BaseLayer
+    7400720: rearow61|Spot02.Target|Take 001|BaseLayer
+    7400722: rearow61|Spot02|Take 001|BaseLayer
+    7400724: rearow61|Spot03.Target|Take 001|BaseLayer
+    7400726: rearow61|Spot03|Take 001|BaseLayer
+    7400728: rearow61|Spot04.Target|Take 001|BaseLayer
+    7400730: rearow61|Spot04|Take 001|BaseLayer
+    7400732: rearow61|Spot05.Target|Take 001|BaseLayer
+    7400734: rearow61|Spot05|Take 001|BaseLayer
+    9500000: //RootNode
+  externalObjects: {}
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+    materialLocation: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    resampleCurves: 1
+    optimizeGameObjects: 0
+    motionNodeName: 
+    rigImportErrors: 
+    rigImportWarnings: 
+    animationImportErrors: 
+    animationImportWarnings: 
+    animationRetargetingWarnings: 
+    animationDoRetargetingWarnings: 0
+    importAnimatedCustomProperties: 0
+    importConstraints: 0
+    animationCompression: 1
+    animationRotationError: 0.5
+    animationPositionError: 0.5
+    animationScaleError: 0.5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    extraUserProperties: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: 0.1
+    meshCompression: 0
+    addColliders: 0
+    importVisibility: 1
+    importBlendShapes: 1
+    importCameras: 1
+    importLights: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    keepQuads: 0
+    weldVertices: 1
+    preserveHierarchy: 0
+    indexFormat: 0
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+    useFileScale: 1
+    previousCalculatedGlobalScale: 0.01
+    hasPreviousCalculatedGlobalScale: 1
+  tangentSpace:
+    normalSmoothAngle: 60
+    normalImportMode: 0
+    tangentImportMode: 3
+    normalCalculationMode: 4
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    serializedVersion: 2
+    human: []
+    skeleton: []
+    armTwist: 0.5
+    foreArmTwist: 0.5
+    upperLegTwist: 0.5
+    legTwist: 0.5
+    armStretch: 0.05
+    legStretch: 0.05
+    feetSpacing: 0
+    rootMotionBoneName: 
+    rootMotionBoneRotation: {x: 0, y: 0, z: 0, w: 1}
+    hasTranslationDoF: 0
+    hasExtraRoot: 0
+    skeletonHasParents: 1
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 2
+  humanoidOversampling: 1
+  additionalBone: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
