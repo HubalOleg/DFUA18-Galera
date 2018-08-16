@@ -21,11 +21,11 @@ public class CameraFly : MonoBehaviour
     void Start()
     {
         originalRotation = transform.rotation;
+        
     }
 
     void Update()
     {
-        
         rotationX += Input.GetAxis("Mouse X") * mouseSensitivity;
         rotationY += Input.GetAxis("Mouse Y") * mouseSensitivity;
         rotationX = ClampAngle(rotationX, minimumX, maximumX);
