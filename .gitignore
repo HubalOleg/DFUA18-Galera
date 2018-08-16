@@ -45,3 +45,7 @@ ExportedObj/
 /Assets/Plugins/Sirenix/Assemblies/Editor/GeneratedOdinEditors.dll.mdb
 /Assets/Plugins/Sirenix/Assemblies/Editor/GeneratedOdinEditors.dll.mdb.meta
 /Assets/Plugins/Sirenix/Assemblies/Editor.meta
+UnityPackageManager/manifest.json
+ProjectSettings/ProjectVersion.txt
+Assets/Scenes/GameScene.unity
+ProjectSettings/ProjectVersion.txt
