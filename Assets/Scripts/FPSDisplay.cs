@@ -1,7 +1,6 @@
 ﻿using UnityEngine;
-using UnityEngine.UI;
 
-namespace DefaultNamespace
+namespace ua.com.gdg.devfest
 {
   public class FPSDisplay : MonoBehaviour
   {
