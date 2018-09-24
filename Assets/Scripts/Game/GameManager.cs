@@ -18,6 +18,6 @@ public class GameManager : MonoBehaviour
 	public void OnFullRevolution()
 	{
 		_revolutionNumbers.RuntimeValue += 1;
-		_revolutionsText.text = "Revolution Numbers: " + _revolutionNumbers.RuntimeValue;
+		_revolutionsText.text = "Revolutions Number: " + _revolutionNumbers.RuntimeValue;
 	}
 }
