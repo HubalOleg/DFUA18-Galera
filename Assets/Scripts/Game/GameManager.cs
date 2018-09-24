@@ -9,8 +9,8 @@ namespace ua.org.gdg.devfest
 		// Editor
 		//---------------------------------------------------------------------
 
-		[SerializeField] public Text _revolutionsText;
-		public IntVariable _revolutionNumbers;
+		[SerializeField] private Text _revolutionsText;
+		[SerializeField] private IntVariable _revolutionNumbers;
 
 		//---------------------------------------------------------------------
 		// Events
