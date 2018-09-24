@@ -1,23 +1,25 @@
-﻿using ua.org.gdg.devfest;
-using UnityEngine;
+﻿using UnityEngine;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+namespace ua.org.gdg.devfest
 {
-	//---------------------------------------------------------------------
-	// Editor
-	//---------------------------------------------------------------------
-	
-	[SerializeField] public Text _revolutionsText;
-	public IntVariable _revolutionNumbers;
-	
-	//---------------------------------------------------------------------
-	// Events
-	//---------------------------------------------------------------------
-
-	public void OnFullRevolution()
+	public class GameManager : MonoBehaviour
 	{
-		_revolutionNumbers.RuntimeValue += 1;
-		_revolutionsText.text = "Revolutions Number: " + _revolutionNumbers.RuntimeValue;
+		//---------------------------------------------------------------------
+		// Editor
+		//---------------------------------------------------------------------
+
+		[SerializeField] public Text _revolutionsText;
+		public IntVariable _revolutionNumbers;
+
+		//---------------------------------------------------------------------
+		// Events
+		//---------------------------------------------------------------------
+
+		public void OnFullRevolution()
+		{
+			_revolutionNumbers.RuntimeValue += 1;
+			_revolutionsText.text = "Revolutions Number: " + _revolutionNumbers.RuntimeValue;
+		}
 	}
 }
