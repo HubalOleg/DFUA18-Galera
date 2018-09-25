@@ -1,6 +1,5 @@
 ﻿using System;
 using UnityEngine;
-using UnityEngine.Experimental.XR.Interaction;
 using UnityEngine.UI;
 
 namespace ua.org.gdg.devfest
