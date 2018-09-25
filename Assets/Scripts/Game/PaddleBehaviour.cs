@@ -9,12 +9,14 @@ namespace ua.org.gdg.galera
     //---------------------------------------------------------------------
 
     [SerializeField] private GameEvent _fullRevolution;
+    [SerializeField] private int _checkpointsNumber;
     
     //---------------------------------------------------------------------
     // Internal
     //---------------------------------------------------------------------
 
     private CheckpointBehaviour _lastEnteredCheckpoint;
+    private int _checkpointCombo;
     
     //---------------------------------------------------------------------
     // Messages
@@ -26,36 +28,36 @@ namespace ua.org.gdg.galera
       
       if(checkpoint == null) return;
 
-      if (_lastEnteredCheckpoint == null)
+      if (_lastEnteredCheckpoint != null && _lastEnteredCheckpoint == checkpoint.PreviousCheckpoint)
       {
-        SetLastEnteredCheckpoint(checkpoint);
-        return;
-      }
-
-      if (_lastEnteredCheckpoint == checkpoint.PreviousCheckpoint)
-      {
-        if (checkpoint.IsFinal)
+        if (IsComboCompleted())
         {
           _fullRevolution.Raise();
-          ResetLastEnteredCheckpoint();
-          return;
+          ResetCombo();
         }
-
-        SetLastEnteredCheckpoint(checkpoint);
+        
+        _checkpointCombo++;
       }
       else
       {
-        ResetLastEnteredCheckpoint();
+        ResetCombo();
       }
+      
+      SetLastEnteredCheckpoint(checkpoint);
     }
     
     //---------------------------------------------------------------------
     // Helpers
     //---------------------------------------------------------------------
-
-    private void ResetLastEnteredCheckpoint()
+    
+    private bool IsComboCompleted()
     {
-      _lastEnteredCheckpoint = null;
+      return _checkpointCombo == _checkpointsNumber;
+    }
+
+    private void ResetCombo()
+    {
+      _checkpointCombo = 0;
     }
 
     private void SetLastEnteredCheckpoint(CheckpointBehaviour checkpoint)
