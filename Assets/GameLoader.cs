@@ -13,7 +13,8 @@ public class GameLoader : MonoBehaviour {
 	// Messages
 	//---------------------------------------------------------------------
 	
-	private void Start () {
+	private void Start () 
+	{
 		Invoke("LoadGame", 2f);
 	}
 	

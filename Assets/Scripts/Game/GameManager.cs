@@ -1,5 +1,6 @@
 ﻿using System;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
 namespace ua.org.gdg.galera
@@ -14,6 +15,7 @@ namespace ua.org.gdg.galera
 		[SerializeField] private Text _revolutionsText;
 		[SerializeField] private Text _positionText;
 		[SerializeField] private Slider _positionProgressBar;
+		[SerializeField] private GvrControllerInput _gvrControllerMain;
 		
 		[Space]
 		[Header("Variables")]
@@ -27,6 +29,7 @@ namespace ua.org.gdg.galera
 		private PositionVariable _currentPosition;
 		private int _revolutionsForNextPosition;
 		private int _positionRevolutionsStep;
+		private GvrControllerInputDevice _controller;
 
 		//---------------------------------------------------------------------
 		// Events
@@ -48,6 +51,15 @@ namespace ua.org.gdg.galera
 		{
 			UpdateCurrentPosition(_positions[0]);
 			UpdateRevolutionsNumber(_revolutionsNumber.RuntimeValue);
+			_controller = GvrControllerInput.GetDevice(GvrControllerHand.Dominant);
+		}
+
+		private void Update()
+		{
+			if (_controller.GetButtonDown(GvrControllerButton.App))
+			{
+				SceneManager.LoadScene("WelcomeScene");
+			}
 		}
 
 		//---------------------------------------------------------------------
