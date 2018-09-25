@@ -15,7 +15,7 @@ namespace ua.org.gdg.galera
 		[SerializeField] private Text _revolutionsText;
 		[SerializeField] private Text _positionText;
 		[SerializeField] private Slider _positionProgressBar;
-		[SerializeField] private GvrControllerInput _gvrControllerMain;
+		[SerializeField] private FadingText _promotingText;
 		
 		[Space]
 		[Header("Variables")]
@@ -77,6 +77,7 @@ namespace ua.org.gdg.galera
 			{
 				var nextPosition = GetNextPosition();
 				UpdateCurrentPosition(nextPosition);
+				_promotingText.ShowText(1.5f);
 			}
 		}
 		
