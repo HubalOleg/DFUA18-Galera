@@ -11,5 +11,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9d79843c6b0b9954b9362c9b2e37131b, type: 3}
   m_Name: Trainee
   m_EditorClassIdentifier: 
-  _positionName: Trainee
-  _revolutionsRequired: 0
+  PositionName: Trainee
+  RevolutionsRequired: 0
