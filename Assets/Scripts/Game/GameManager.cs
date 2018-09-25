@@ -54,6 +54,28 @@ namespace ua.org.gdg.galera
 		// Helpers
 		//---------------------------------------------------------------------
 
+		private void UpdateRevolutionsNumber(int numbers)
+		{
+			_revolutionsText.text = string.Format("Revolutions number: {0}", numbers);
+		}
+		
+		private void SalaryReview()
+		{
+			if (_revolutionsNumber.RuntimeValue >= _revolutionsForNextPosition)
+			{
+				var nextPosition = GetNextPosition();
+				UpdateCurrentPosition(nextPosition);
+			}
+		}
+		
+		private PositionVariable GetNextPosition()
+		{
+			var index = Array.IndexOf(_positions, _currentPosition);
+			var nextIndex = Mathf.Clamp(index + 1, 0, _positions.Length - 1);
+			
+			return _positions[nextIndex];
+		}
+
 		private void UpdateCurrentPosition(PositionVariable position)
 		{
 			_currentPosition = position;
@@ -66,28 +88,6 @@ namespace ua.org.gdg.galera
 			var nextPosition = GetNextPosition();
 			_revolutionsForNextPosition = nextPosition.RevolutionsRequired;
 			_positionRevolutionsStep = _revolutionsForNextPosition - _revolutionsNumber.RuntimeValue;
-		}
-
-		private PositionVariable GetNextPosition()
-		{
-			var index = Array.IndexOf(_positions, _currentPosition);
-			var nextIndex = Mathf.Clamp(index + 1, 0, _positions.Length - 1);
-			
-			return _positions[nextIndex];
-		}
-
-		private void UpdateRevolutionsNumber(int numbers)
-		{
-			_revolutionsText.text = string.Format("Revolutions number: {0}", numbers);
-		}
-
-		private void SalaryReview()
-		{
-			if (_revolutionsNumber.RuntimeValue >= _revolutionsForNextPosition)
-			{
-				var nextPosition = GetNextPosition();
-				UpdateCurrentPosition(nextPosition);
-			}
 		}
 
 		private void UpdatePositionProgress()
