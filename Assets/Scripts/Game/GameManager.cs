@@ -13,6 +13,7 @@ namespace ua.org.gdg.galera
 		[Header("UI")]
 		[SerializeField] private Text _revolutionsText;
 		[SerializeField] private Text _positionText;
+		[SerializeField] private Slider _positionProgressBar;
 		
 		[Space]
 		[Header("Variables")]
@@ -25,6 +26,7 @@ namespace ua.org.gdg.galera
 
 		private PositionVariable _currentPosition;
 		private int _revolutionsForNextPosition;
+		private int _positionRevolutionsStep;
 
 		//---------------------------------------------------------------------
 		// Events
@@ -35,6 +37,7 @@ namespace ua.org.gdg.galera
 			_revolutionsNumber.RuntimeValue += 1;
 			UpdateRevolutionsNumber(_revolutionsNumber.RuntimeValue);
 			SalaryReview();
+			UpdatePositionProgress();
 		}
 		
 		//---------------------------------------------------------------------
@@ -62,6 +65,7 @@ namespace ua.org.gdg.galera
 		{
 			var nextPosition = GetNextPosition();
 			_revolutionsForNextPosition = nextPosition.RevolutionsRequired;
+			_positionRevolutionsStep = _revolutionsForNextPosition - _revolutionsNumber.RuntimeValue;
 		}
 
 		private PositionVariable GetNextPosition()
@@ -70,6 +74,11 @@ namespace ua.org.gdg.galera
 			var nextIndex = Mathf.Clamp(index + 1, 0, _positions.Length - 1);
 			
 			return _positions[nextIndex];
+		}
+
+		private void UpdateRevolutionsNumber(int numbers)
+		{
+			_revolutionsText.text = string.Format("Revolutions number: {0}", numbers);
 		}
 
 		private void SalaryReview()
@@ -81,9 +90,19 @@ namespace ua.org.gdg.galera
 			}
 		}
 
-		private void UpdateRevolutionsNumber(int numbers)
+		private void UpdatePositionProgress()
 		{
-			_revolutionsText.text = string.Format("Revolutions number: {0}", numbers);
+			var progress = GetPositionProgress();
+			_positionProgressBar.value = progress;
+		}
+
+		private float GetPositionProgress()
+		{
+			var revolutionsLeft = _revolutionsForNextPosition - _revolutionsNumber.RuntimeValue;
+			var revolutionsMade = _positionRevolutionsStep - revolutionsLeft;
+			var normalizedRevolutionsMade = (float)revolutionsMade / _positionRevolutionsStep;
+
+			return normalizedRevolutionsMade;
 		}
 	}
 }
