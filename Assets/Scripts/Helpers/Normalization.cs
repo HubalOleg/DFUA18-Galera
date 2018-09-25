@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ua.com.gdg.devfest
+namespace ua.org.gdg.galera
 {
 	public class Normalization : MonoBehaviour
 	{

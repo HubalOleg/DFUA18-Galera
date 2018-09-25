@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.UI;
 
-namespace ua.org.gdg.devfest
+namespace ua.org.gdg.galera
 {
 	public class GameManager : MonoBehaviour
 	{

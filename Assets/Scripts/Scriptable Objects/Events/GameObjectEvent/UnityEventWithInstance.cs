@@ -2,7 +2,7 @@
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace ua.org.gdg.devfest
+namespace ua.org.gdg.galera
 {
   [Serializable]
   public class UnityEventWithInstance : UnityEvent<GameObject>

@@ -1,8 +1,7 @@
 ﻿using System;
-using ua.org.gdg.devfest;
 using UnityEngine;
 
-namespace ua.com.gdg.devfest
+namespace ua.org.gdg.galera
 {
   public class DaydreamControllerHandler : Singleton<DaydreamControllerHandler>
   {

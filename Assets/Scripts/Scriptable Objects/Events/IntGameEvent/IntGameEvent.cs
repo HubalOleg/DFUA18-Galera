@@ -1,7 +1,7 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 
-namespace ua.org.gdg.devfest
+namespace ua.org.gdg.galera
 {
 	[CreateAssetMenu(menuName = "Events/IntGameEvent")]
 	public class IntGameEvent : ScriptableObject

@@ -8,7 +8,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace ua.org.gdg.devfest
+namespace ua.org.gdg.galera
 {
     [CustomEditor(typeof(GameEvent))]
     public class EventEditor : Editor

@@ -8,7 +8,7 @@
 using UnityEditor;
 using UnityEngine;
 
-namespace ua.org.gdg.devfest
+namespace ua.org.gdg.galera
 {
     [CustomPropertyDrawer(typeof(FloatReference))]
     public class FloatReferenceDrawer : PropertyDrawer

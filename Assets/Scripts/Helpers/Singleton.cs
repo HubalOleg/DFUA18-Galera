@@ -11,7 +11,7 @@
 using System.Diagnostics.CodeAnalysis;
 using UnityEngine;
 
-namespace ua.org.gdg.devfest
+namespace ua.org.gdg.galera
 {
     public class Singleton<T> : MonoBehaviour where T : Component
     {

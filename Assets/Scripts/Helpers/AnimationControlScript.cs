@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace ua.com.gdg.devfest
+namespace ua.org.gdg.galera
 {
 	public class AnimationControlScript : MonoBehaviour
 	{

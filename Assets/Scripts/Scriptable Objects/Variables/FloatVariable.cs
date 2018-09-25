@@ -1,7 +1,7 @@
 ﻿using System;
 using UnityEngine;
 
-namespace ua.org.gdg.devfest
+namespace ua.org.gdg.galera
 {
   [CreateAssetMenu(fileName = "FloatVariable", menuName = "Variables/FloatVariable")]
   public class FloatVariable : ScriptableObject, ISerializationCallbackReceiver

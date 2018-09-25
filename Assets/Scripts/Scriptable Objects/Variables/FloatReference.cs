@@ -7,7 +7,7 @@
 
 using System;
 
-namespace ua.org.gdg.devfest
+namespace ua.org.gdg.galera
 {
   [Serializable]
   public class FloatReference

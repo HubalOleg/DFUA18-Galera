@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace ua.org.gdg.devfest
+namespace ua.org.gdg.galera
 {
 	public class InstanceGameEventListener : MonoBehaviour
 	{

@@ -1,7 +1,7 @@
 ﻿using UnityEngine;
 using UnityEngine.Events;
 
-namespace ua.org.gdg.devfest
+namespace ua.org.gdg.galera
 {
 	public class GameEventListener : MonoBehaviour
 	{
