@@ -7,5 +7,6 @@ namespace ua.org.gdg.galera
 	{
 		[SerializeField] public string PositionName;
 		[SerializeField] public int RevolutionsRequired;
+		[SerializeField] public GameObject Paddle;
 	}
 }

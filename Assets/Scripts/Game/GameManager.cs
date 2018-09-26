@@ -16,6 +16,9 @@ namespace ua.org.gdg.galera
 		[SerializeField] private Text _positionText;
 		[SerializeField] private Slider _positionProgressBar;
 		[SerializeField] private FadingText _promotingText;
+
+		[Header("Game")] 
+		[SerializeField] private PaddleBehaviour _paddle;
 		
 		[Space]
 		[Header("Variables")]
@@ -93,7 +96,9 @@ namespace ua.org.gdg.galera
 		{
 			_currentPosition = position;
 			SetRevolutionsForNextPosition();
-			_positionText.text = string.Format("Current position: {0}", position.name);
+			_paddle.SetPaddleMesh(position);
+			
+			_positionText.text = string.Format("Current position: {0}", position.PositionName);
 		}
 
 		private void SetRevolutionsForNextPosition()

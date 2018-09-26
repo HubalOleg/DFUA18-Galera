@@ -13,3 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PositionName: Junior
   RevolutionsRequired: 5
+  Paddle: {fileID: 1097891546004472, guid: dcab847698ebb33479040d9aa81bafaa, type: 2}

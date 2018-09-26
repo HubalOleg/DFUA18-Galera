@@ -17,6 +17,7 @@ namespace ua.org.gdg.galera
 
     private CheckpointBehaviour _lastEnteredCheckpoint;
     private int _checkpointCombo;
+    private GameObject _paddleMesh;
     
     //---------------------------------------------------------------------
     // Messages
@@ -44,6 +45,17 @@ namespace ua.org.gdg.galera
       }
       
       SetLastEnteredCheckpoint(checkpoint);
+    }
+    
+    //---------------------------------------------------------------------
+    // Public
+    //---------------------------------------------------------------------
+
+    public void SetPaddleMesh(PositionVariable position)
+    {
+      if(_paddleMesh != null) Destroy(_paddleMesh);
+
+      _paddleMesh = Instantiate(position.Paddle, transform);
     }
     
     //---------------------------------------------------------------------
