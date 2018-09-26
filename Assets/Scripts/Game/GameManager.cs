@@ -32,6 +32,7 @@ namespace ua.org.gdg.galera
 		private PositionVariable _currentPosition;
 		private int _revolutionsForNextPosition;
 		private int _positionRevolutionsStep;
+		private bool _gameOver;
 		private GvrControllerInputDevice _controller;
 
 		//---------------------------------------------------------------------
@@ -76,11 +77,12 @@ namespace ua.org.gdg.galera
 		
 		private void SalaryReview()
 		{
-			if (_revolutionsNumber.RuntimeValue >= _revolutionsForNextPosition)
+			if (_revolutionsNumber.RuntimeValue >= _revolutionsForNextPosition && !_gameOver)
 			{
 				var nextPosition = GetNextPosition();
 				UpdateCurrentPosition(nextPosition);
 				_promotingText.ShowText(1.5f);
+				CheckIfGameOver();
 			}
 		}
 		
@@ -108,8 +110,15 @@ namespace ua.org.gdg.galera
 			_positionRevolutionsStep = _revolutionsForNextPosition - _revolutionsNumber.RuntimeValue;
 		}
 
+		private void CheckIfGameOver()
+		{
+			_gameOver = _currentPosition == _positions[_positions.Length - 1];
+		}
+
 		private void UpdatePositionProgress()
 		{
+			if (_gameOver) return;
+			
 			var progress = GetPositionProgress();
 			_positionProgressBar.value = progress;
 		}
