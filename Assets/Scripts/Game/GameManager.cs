@@ -65,7 +65,7 @@ namespace ua.org.gdg.galera
 
 		private void Update()
 		{
-			if (_controller.GetButtonDown(GvrControllerButton.App))
+			if (_controller != null && _controller.GetButtonDown(GvrControllerButton.App))
 			{
 				SceneManager.LoadScene("WelcomeScene");
 			}
