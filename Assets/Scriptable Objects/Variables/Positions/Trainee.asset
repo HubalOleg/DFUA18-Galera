@@ -13,4 +13,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PositionName: Trainee
   RevolutionsRequired: 0
-  Paddle: {fileID: 1031052964930370, guid: 3c7ea8af62d108e4198a01ac0dd5d3d3, type: 2}
+  Paddle: {fileID: 1031052964930370, guid: c88e1ec8a09f1e749bc73011c927592c, type: 2}
