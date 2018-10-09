@@ -200,7 +200,37 @@ ModelImporter:
     13700006: MaleBruteA_Eyes
     13700008: MaleBruteA_Shoes
     2186277476908879412: ImportLogs
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Body_MAT2
+    second: {fileID: 2100000, guid: 882f0587b2c71ce4289d267f6aa4a5d3, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyeSpec_MAT2
+    second: {fileID: 2100000, guid: 866aaf63aa3c2364a88c135d411e944d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: EyeSpec_MAT2.001
+    second: {fileID: 2100000, guid: c66ced271f5370c4083b44334db6f5d5, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Lashes_MAT2
+    second: {fileID: 2100000, guid: 0e705d11b4b98cc40ada88649477d4ba, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaleBruteA_Bottom3
+    second: {fileID: 2100000, guid: a537b326a00926546abf1f98197078d0, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: MaleBruteA_Shoes4
+    second: {fileID: 2100000, guid: db323537131fc9941bd371deacbd78c8, type: 2}
   materials:
     importMaterials: 1
     materialName: 0
