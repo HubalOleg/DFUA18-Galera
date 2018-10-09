@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4432390737201168}
   - component: {fileID: 33938633146827670}
   - component: {fileID: 23807210291650950}
+  - component: {fileID: 135520590453429226}
   m_Layer: 0
   m_Name: Trainee
   m_TagString: Untagged
@@ -83,3 +84,15 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1031052964930370}
   m_Mesh: {fileID: 4300000, guid: 044d6c69d0cd3ef41b05778e5335b76f, type: 3}
+--- !u!135 &135520590453429226
+SphereCollider:
+  m_ObjectHideFlags: 1
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1031052964930370}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.007
+  m_Center: {x: 0, y: -0.005, z: 0}
