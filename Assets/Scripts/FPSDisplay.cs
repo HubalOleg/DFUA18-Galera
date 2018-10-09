@@ -5,20 +5,22 @@ namespace ua.com.gdg.devfest
   public class FPSDisplay : MonoBehaviour
   {
 
-    public int avgFrameRate;
-
-    private void Awake()
+    float deltaTime = 0.0f;
+ 
+    void Update()
     {
-      Application.targetFrameRate = 100;
+      deltaTime += (Time.unscaledDeltaTime - deltaTime) * 0.1f;
     }
-
-    private void Update()
+ 
+    void OnGUI()
     {
-      float current = 0;
-      current = Time.frameCount / Time.time;
-      avgFrameRate = (int) current;
-      
-      Debug.Log(avgFrameRate);
+      int w = Screen.width, h = Screen.height;
+ 
+ 
+      float msec = deltaTime * 1000.0f;
+      float fps = 1.0f / deltaTime;
+      string text = string.Format("{0:0.0} ms ({1:0.} fps)", msec, fps);
+      Debug.Log(text);
     }
   }
 }

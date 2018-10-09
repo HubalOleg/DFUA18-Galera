@@ -1,61 +1,39 @@
 fileFormatVersion: 2
-guid: b903e39c2e60d914d9b87c42b078fc8e
+guid: 1029d3a0800f24d46a928701c0f2fb38
 ModelImporter:
   serializedVersion: 23
   fileIDToRecycleName:
     100000: //RootNode
-    100002: Jib_back_sails.001
-    100004: Mast_02
-    100006: Rigs.001
-    100008: Sail_02
+    100002: Cube
+    100004: Cube.001
+    100006: Cube.002
+    100008: Cube.003
+    100010: Cube.004
     400000: //RootNode
-    400002: Jib_back_sails.001
-    400004: Mast_02
-    400006: Rigs.001
-    400008: Sail_02
-    2100000: rig
-    2100002: jibsails_back
-    2100004: mast2
-    2100006: ship1
-    2100008: sails_laddr_fmast
-    2300000: Jib_back_sails.001
-    2300002: Mast_02
-    2300004: Rigs.001
-    2300006: Sail_02
-    3300000: Jib_back_sails.001
-    3300002: Mast_02
-    3300004: Rigs.001
-    3300006: Sail_02
-    4300000: Rigs.001
-    4300002: Jib_back_sails.001
-    4300004: Mast_02
-    4300006: Sail_02
-  externalObjects:
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: jibsails_back
-    second: {fileID: 2100000, guid: 16c2bca55d95107449724ae125dff92e, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: mast2
-    second: {fileID: 2100000, guid: ed7a0b96370272b4da5a7ea9e27b37d3, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: rig
-    second: {fileID: 2100000, guid: 16a73e01cb709a542934d5e0957590ce, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: sails_laddr_fmast
-    second: {fileID: 2100000, guid: 039dfaddc170baa41a48421cca13c1a8, type: 2}
-  - first:
-      type: UnityEngine:Material
-      assembly: UnityEngine.CoreModule
-      name: ship1
-    second: {fileID: 2100000, guid: 4993410baf76cc847b0f7d186f99479a, type: 2}
+    400002: Cube
+    400004: Cube.001
+    400006: Cube.002
+    400008: Cube.003
+    400010: Cube.004
+    2100000: Material
+    2300000: //RootNode
+    2300002: Cube
+    2300004: Cube.001
+    2300006: Cube.002
+    2300008: Cube.003
+    2300010: Cube.004
+    3300000: //RootNode
+    3300002: Cube
+    3300004: Cube.001
+    3300006: Cube.002
+    3300008: Cube.003
+    3300010: Cube.004
+    4300000: Cube
+    4300002: Cube.004
+    4300004: Cube.003
+    4300006: Cube.002
+    4300008: Cube.001
+  externalObjects: {}
   materials:
     importMaterials: 1
     materialName: 0
@@ -86,7 +64,7 @@ ModelImporter:
     isReadable: 1
   meshes:
     lODScreenPercentages: []
-    globalScale: 1.7
+    globalScale: 0.3
     meshCompression: 0
     addColliders: 0
     importVisibility: 0
@@ -113,7 +91,7 @@ ModelImporter:
     normalImportMode: 0
     tangentImportMode: 3
     normalCalculationMode: 4
-  importAnimation: 0
+  importAnimation: 1
   copyAvatar: 0
   humanDescription:
     serializedVersion: 2
