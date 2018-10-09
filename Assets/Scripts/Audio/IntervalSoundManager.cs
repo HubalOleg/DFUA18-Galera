@@ -4,30 +4,34 @@ using UnityEngine;
 
 namespace ua.com.gdg.devfest
 {
+	[RequireComponent(typeof(AudioSource))]
 	public class IntervalSoundManager : MonoBehaviour {
 
 		//---------------------------------------------------------------------
 		// Editor
 		//---------------------------------------------------------------------
 
-		[SerializeField] private AudioSource _audioSource;
 		[SerializeField] private List<AudioClip> _audioClipList;
-		
-		[SerializeField] private float _minPitchInterval;
-		[SerializeField] private float _maxPitchInterval;
 
-		[SerializeField] private float _soundInterval;
 		[SerializeField] private bool _isGameActive = true;
-	
+		
+		[SerializeField] private float _minRandomInterval;
+		[SerializeField] private float _maxRandomInterval;
+
 		//---------------------------------------------------------------------
 		// Internal
 		//---------------------------------------------------------------------
-
-		private int _currentClipPosition = 0;
+		
+		private AudioSource _audioSource;
 		
 		//---------------------------------------------------------------------
 		// Messages
 		//---------------------------------------------------------------------
+
+		private void Awake()
+		{
+			_audioSource = GetComponent<AudioSource>();
+		}
 
 		private void Start()
 		{
@@ -38,13 +42,12 @@ namespace ua.com.gdg.devfest
 		// Public
 		//---------------------------------------------------------------------
 
-		public void PlayNextClip()
+		private void PlayRandomClip()
 		{
-			_audioSource.clip = _audioClipList[_currentClipPosition];
-			_audioSource.pitch = Random.Range(_minPitchInterval, _maxPitchInterval);
+			var position = Random.Range(0, _audioClipList.Count - 1);
+			_audioSource.clip = _audioClipList[position];
 			_audioSource.Play();
 
-			_currentClipPosition = ++_currentClipPosition % _audioClipList.Count;
 		}
 		
 		//---------------------------------------------------------------------
@@ -53,11 +56,19 @@ namespace ua.com.gdg.devfest
 
 		private IEnumerator PlaySoundWithInterval()
 		{	
+			yield return new WaitForSeconds(GetRandomInterval());
+			
 			while (_isGameActive)
 			{
-				PlayNextClip();
-				yield return new WaitForSeconds(_soundInterval);
+				PlayRandomClip();
+
+				yield return new WaitForSeconds(GetRandomInterval());
 			}
+		}
+
+		private float GetRandomInterval()
+		{
+			return Random.Range(_minRandomInterval, _maxRandomInterval);
 		}
 	}
 }
