@@ -5549,20 +5549,20 @@ Prefab:
       objectReference: {fileID: 675732274}
     - target: {fileID: 4440892486462802, guid: acee6739561ad8f4e9e342b8a4d0a71f, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4440892486462802, guid: acee6739561ad8f4e9e342b8a4d0a71f, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4440892486462802, guid: acee6739561ad8f4e9e342b8a4d0a71f, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 135775605494247194, guid: acee6739561ad8f4e9e342b8a4d0a71f,
         type: 2}
       propertyPath: m_Radius
-      value: 0.8
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 1254393845926172, guid: acee6739561ad8f4e9e342b8a4d0a71f, type: 2}
       propertyPath: m_Name
@@ -8433,20 +8433,20 @@ Prefab:
       objectReference: {fileID: 1863162444}
     - target: {fileID: 4440892486462802, guid: acee6739561ad8f4e9e342b8a4d0a71f, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4440892486462802, guid: acee6739561ad8f4e9e342b8a4d0a71f, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4440892486462802, guid: acee6739561ad8f4e9e342b8a4d0a71f, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 135775605494247194, guid: acee6739561ad8f4e9e342b8a4d0a71f,
         type: 2}
       propertyPath: m_Radius
-      value: 0.8
+      value: 0.85
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 33826430232238618, guid: acee6739561ad8f4e9e342b8a4d0a71f, type: 2}
@@ -9455,7 +9455,7 @@ Prefab:
     - target: {fileID: 135775605494247194, guid: acee6739561ad8f4e9e342b8a4d0a71f,
         type: 2}
       propertyPath: m_Radius
-      value: 0.8
+      value: 0.85
       objectReference: {fileID: 0}
     - target: {fileID: 114841982974495840, guid: acee6739561ad8f4e9e342b8a4d0a71f,
         type: 2}
@@ -13544,20 +13544,20 @@ Prefab:
       objectReference: {fileID: 1089415850}
     - target: {fileID: 4440892486462802, guid: acee6739561ad8f4e9e342b8a4d0a71f, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4440892486462802, guid: acee6739561ad8f4e9e342b8a4d0a71f, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 4440892486462802, guid: acee6739561ad8f4e9e342b8a4d0a71f, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.5
+      value: 0.75
       objectReference: {fileID: 0}
     - target: {fileID: 135775605494247194, guid: acee6739561ad8f4e9e342b8a4d0a71f,
         type: 2}
       propertyPath: m_Radius
-      value: 0.8
+      value: 0.85
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 33826430232238618, guid: acee6739561ad8f4e9e342b8a4d0a71f, type: 2}
@@ -13575,7 +13575,7 @@ Transform:
     type: 3}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1574991065}
-  m_LocalRotation: {x: 0.43046057, y: 0.43045804, z: -0.56098396, w: 0.56098723}
+  m_LocalRotation: {x: 0.43046066, y: 0.43045822, z: -0.5609839, w: 0.56098706}
   m_LocalPosition: {x: -3.73, y: -1.23, z: -0.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -13610,8 +13610,8 @@ RotationConstraint:
   m_GameObject: {fileID: 1574991065}
   m_Enabled: 1
   m_Weight: 1
-  m_RotationAtRest: {x: 75, y: 0, z: -89.999664}
-  m_RotationOffset: {x: 75, y: 0, z: -89.999664}
+  m_RotationAtRest: {x: 75.00002, y: 0, z: -89.999695}
+  m_RotationOffset: {x: 75.00002, y: 0, z: -89.999695}
   m_AffectRotationX: 1
   m_AffectRotationY: 1
   m_AffectRotationZ: 1
