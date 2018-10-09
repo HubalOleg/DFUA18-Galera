@@ -425,7 +425,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 2
-  m_Text: "Congratulations!\nYou have been accepted. \nWelcome aboard, fella!"
+  m_Text: "Congrats!\nYeh're in da team. \nWelcome aboard, fella!"
 --- !u!222 &1070705555
 CanvasRenderer:
   m_ObjectHideFlags: 0
