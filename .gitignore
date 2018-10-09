@@ -6,6 +6,7 @@
 /[Bb]uilds/
 /[Rr]ecords/
 /Assets/AssetStoreTools*
+/Assets/Audio/Paid*
 
 # Unity3D generated meta files
 *.pidb.meta
