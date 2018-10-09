@@ -19,7 +19,9 @@ namespace ua.org.gdg.galera
 		[SerializeField] private Text _positionText;
 		[SerializeField] private Slider _positionProgressBar;
 		[SerializeField] private FadingText _promotingText;
+		[SerializeField] private GameObject _gameOverText;
 
+		[Space]
 		[Header("Game")] 
 		[SerializeField] private PaddleBehaviour _paddle;
 		
@@ -84,8 +86,16 @@ namespace ua.org.gdg.galera
 			
 			var nextPosition = GetNextPosition();
 			UpdateCurrentPosition(nextPosition);
-			_promotingText.ShowText(1.5f);
-			CheckIfGameOver();
+			StartCoroutine(AnimatedPositionUpdate(PROGRESSBAR_ANIMATION_DURATION, _positionProgressBar.value, 0));
+			
+			if (CheckIfGameOver())
+			{
+				_gameOverText.SetActive(true);
+			}
+			else
+			{
+				_promotingText.ShowText(1.5f);
+			}
 		}
 		
 		private PositionVariable GetNextPosition()
@@ -112,9 +122,9 @@ namespace ua.org.gdg.galera
 			_positionRevolutionsStep = _revolutionsForNextPosition - _revolutionsNumber.RuntimeValue;
 		}
 
-		private void CheckIfGameOver()
+		private bool CheckIfGameOver()
 		{
-			_gameOver = _currentPosition == _positions[_positions.Length - 1];
+			return _gameOver = _currentPosition == _positions[_positions.Length - 1];
 		}
 
 		private void UpdatePositionProgress()
