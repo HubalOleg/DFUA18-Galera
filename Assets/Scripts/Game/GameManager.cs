@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
@@ -7,6 +8,8 @@ namespace ua.org.gdg.galera
 {
 	public class GameManager : MonoBehaviour
 	{
+		private const float PROGRESSBAR_ANIMATION_DURATION = .5f;
+		
 		//---------------------------------------------------------------------
 		// Editor
 		//---------------------------------------------------------------------
@@ -16,7 +19,9 @@ namespace ua.org.gdg.galera
 		[SerializeField] private Text _positionText;
 		[SerializeField] private Slider _positionProgressBar;
 		[SerializeField] private FadingText _promotingText;
+		[SerializeField] private GameObject _gameOverText;
 
+		[Space]
 		[Header("Game")] 
 		[SerializeField] private PaddleBehaviour _paddle;
 		
@@ -77,12 +82,19 @@ namespace ua.org.gdg.galera
 		
 		private void SalaryReview()
 		{
-			if (_revolutionsNumber.RuntimeValue >= _revolutionsForNextPosition && !_gameOver)
+			if (_revolutionsNumber.RuntimeValue <= _revolutionsForNextPosition || _gameOver) return;
+			
+			var nextPosition = GetNextPosition();
+			UpdateCurrentPosition(nextPosition);
+			StartCoroutine(AnimatedPositionUpdate(PROGRESSBAR_ANIMATION_DURATION, _positionProgressBar.value, 0));
+			
+			if (CheckIfGameOver())
 			{
-				var nextPosition = GetNextPosition();
-				UpdateCurrentPosition(nextPosition);
+				_gameOverText.SetActive(true);
+			}
+			else
+			{
 				_promotingText.ShowText(1.5f);
-				CheckIfGameOver();
 			}
 		}
 		
@@ -110,9 +122,9 @@ namespace ua.org.gdg.galera
 			_positionRevolutionsStep = _revolutionsForNextPosition - _revolutionsNumber.RuntimeValue;
 		}
 
-		private void CheckIfGameOver()
+		private bool CheckIfGameOver()
 		{
-			_gameOver = _currentPosition == _positions[_positions.Length - 1];
+			return _gameOver = _currentPosition == _positions[_positions.Length - 1];
 		}
 
 		private void UpdatePositionProgress()
@@ -120,7 +132,7 @@ namespace ua.org.gdg.galera
 			if (_gameOver) return;
 			
 			var progress = GetPositionProgress();
-			_positionProgressBar.value = progress;
+			StartCoroutine(AnimatedPositionUpdate(PROGRESSBAR_ANIMATION_DURATION, _positionProgressBar.value, progress));
 		}
 
 		private float GetPositionProgress()
@@ -130,6 +142,20 @@ namespace ua.org.gdg.galera
 			var normalizedRevolutionsMade = (float)revolutionsMade / _positionRevolutionsStep;
 
 			return normalizedRevolutionsMade;
+		}
+
+		private IEnumerator AnimatedPositionUpdate(float time, float start, float end)
+		{
+			var timeLeft = time;
+			
+			while (timeLeft > 0)
+			{
+				_positionProgressBar.value = Mathf.Lerp(start, end, 1 - timeLeft / time);
+				timeLeft -= Time.deltaTime;
+				yield return new WaitForSeconds(.01f);
+			}
+
+			_positionProgressBar.value = end;
 		}
 	}
 }
