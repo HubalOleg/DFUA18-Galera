@@ -21,7 +21,7 @@ GameObject:
   - component: {fileID: 4432390737201168}
   - component: {fileID: 33938633146827670}
   - component: {fileID: 23807210291650950}
-  - component: {fileID: 135520590453429226}
+  - component: {fileID: 136889688546490410}
   m_Layer: 0
   m_Name: Trainee
   m_TagString: Untagged
@@ -36,7 +36,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1031052964930370}
   m_LocalRotation: {x: 0.6963643, y: -0.6963643, z: -0.12278779, w: 0.12278779}
-  m_LocalPosition: {x: -3.947, y: 0, z: 0.931}
+  m_LocalPosition: {x: -3.52, y: 0, z: 0.776}
   m_LocalScale: {x: 50, y: 70, z: 70}
   m_Children: []
   m_Father: {fileID: 0}
@@ -84,8 +84,8 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1031052964930370}
   m_Mesh: {fileID: 4300000, guid: 044d6c69d0cd3ef41b05778e5335b76f, type: 3}
---- !u!135 &135520590453429226
-SphereCollider:
+--- !u!136 &136889688546490410
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
@@ -93,6 +93,7 @@ SphereCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.007
-  m_Center: {x: 0, y: -0.005, z: 0}
+  m_Radius: 0.005000003
+  m_Height: 0.04
+  m_Direction: 1
+  m_Center: {x: -0.000000014901161, y: 0.000000013038516, z: 0.0000000055879354}

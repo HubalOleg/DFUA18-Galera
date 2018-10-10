@@ -104,7 +104,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 4018115466038476}
-  - component: {fileID: 135034093113798774}
+  - component: {fileID: 136141800179143780}
   m_Layer: 0
   m_Name: Junior
   m_TagString: Untagged
@@ -405,15 +405,16 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1145738056209902}
   m_Mesh: {fileID: 4300008, guid: 2002809d36a68814a9965d6d1d267556, type: 3}
---- !u!135 &135034093113798774
-SphereCollider:
+--- !u!136 &136141800179143780
+CapsuleCollider:
   m_ObjectHideFlags: 1
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1732553329291930}
   m_Material: {fileID: 0}
-  m_IsTrigger: 1
+  m_IsTrigger: 0
   m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.35
-  m_Center: {x: -0.35, y: 9.53, z: -0.15}
+  m_Radius: 0.5
+  m_Height: 2.77
+  m_Direction: 1
+  m_Center: {x: 0.23, y: 10.11, z: 0}
