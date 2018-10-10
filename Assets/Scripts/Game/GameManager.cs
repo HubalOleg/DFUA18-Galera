@@ -94,7 +94,7 @@ namespace ua.org.gdg.galera
 			}
 			else
 			{
-				_promotingText.ShowText(1.5f);
+				_promotingText.ShowText(1.5f, nextPosition.PositionName);
 			}
 		}
 		

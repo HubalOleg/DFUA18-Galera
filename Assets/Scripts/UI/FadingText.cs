@@ -9,6 +9,7 @@ public class FadingText : MonoBehaviour {
   //---------------------------------------------------------------------
 
   private Text _text;
+  private const string MESSAGE = "You have been promoted to {0}!";
   
   //---------------------------------------------------------------------
   // Messages
@@ -23,8 +24,9 @@ public class FadingText : MonoBehaviour {
   // Public
   //---------------------------------------------------------------------
 
-  public void ShowText(float time)
+  public void ShowText(float time, string position)
   {
+    _text.text = string.Format(MESSAGE, position);
     StartCoroutine(FadeTextToFullAlpha(time));
   }
   
