@@ -29,6 +29,10 @@ namespace ua.org.gdg.galera
 		[Header("Variables")]
 		[SerializeField] private IntVariable _revolutionsNumber;
 		[SerializeField] private PositionVariable[] _positions;
+
+		[Space] 
+		[Header("Audio")] 
+		[SerializeField] private UIAudioManager _uiAudioManager;
 		
 		//---------------------------------------------------------------------
 		// Internal
@@ -91,10 +95,13 @@ namespace ua.org.gdg.galera
 			if (CheckIfGameOver())
 			{
 				_gameOverText.SetActive(true);
+				_positionProgressBar.gameObject.SetActive(false);
+				_uiAudioManager.PlayGameOverClip();
 			}
 			else
 			{
 				_promotingText.ShowText(1.5f, nextPosition.PositionName);
+				_uiAudioManager.PlayPromoteClip();
 			}
 		}
 		

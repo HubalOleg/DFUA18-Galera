@@ -3,6 +3,13 @@ using UnityEngine.SceneManagement;
 
 public class GameLoader : MonoBehaviour {
 	
+	
+	//---------------------------------------------------------------------
+	// Editor
+	//---------------------------------------------------------------------
+
+	[SerializeField] private float _gameSceneLoadDelay;
+	
 	//---------------------------------------------------------------------
 	// Internal
 	//---------------------------------------------------------------------
@@ -15,7 +22,7 @@ public class GameLoader : MonoBehaviour {
 	
 	private void Start () 
 	{
-		Invoke("LoadGame", 2f);
+		Invoke("LoadGame", _gameSceneLoadDelay);
 	}
 	
 	//---------------------------------------------------------------------

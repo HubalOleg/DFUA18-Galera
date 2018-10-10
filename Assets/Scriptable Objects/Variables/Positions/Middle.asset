@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: Middle
   m_EditorClassIdentifier: 
   PositionName: Middle
-  RevolutionsRequired: 10
+  RevolutionsRequired: 14
   Paddle: {fileID: 1097891546004472, guid: 9f4abaff011110b45a86127f55b9090e, type: 2}

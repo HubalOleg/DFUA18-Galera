@@ -12,5 +12,5 @@ MonoBehaviour:
   m_Name: Senior
   m_EditorClassIdentifier: 
   PositionName: Senior
-  RevolutionsRequired: 15
+  RevolutionsRequired: 25
   Paddle: {fileID: 1097891546004472, guid: 7024752104770b04998029f69d3673cf, type: 2}
