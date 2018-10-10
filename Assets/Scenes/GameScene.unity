@@ -21962,7 +21962,7 @@ Prefab:
     - target: {fileID: 114320541817775616, guid: d695233ffcaa1b646a739a15d7ecc088,
         type: 2}
       propertyPath: m_FontData.m_BestFit
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224640697685430864, guid: d695233ffcaa1b646a739a15d7ecc088,
         type: 2}
